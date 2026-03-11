@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+<style>
+.p9{
+    margin-left: 37rem;
+}
+.img3{
+    margin-left: 25rem;
+    width: 40rem;
+    height: 30rem;
+}
+.b5{
+    background-color: red;
+    width: 40rem;
+    margin-left: 25rem;
+}
+.b6{
+    background-color: green;
+    width: 40rem;
+    margin-left: 25rem;
+    margin-top: 0.5rem;
+}
+.b7{
+    background-color: yellow;
+     width: 40rem;
+    margin-left: 25rem;
+    margin-top: 0.5rem;
+}
+.b8{
+    background-color: blue;
+     width: 40rem;
+    margin-left: 25rem;
+    margin-top: 0.5rem;
+}
+</style>
+
+
+
+ <p>Очки: <span class="score">2</span></p>
+<p class="p9">В какой факультет попал Гарри Поттер?</p>
+<img class="img3" src="https://zefirka.club/uploads/posts/2022-12/1669851466_2-zefirka-club-p-garri-potter-gerbi-fakultetov-3.jpg" alt="">
+
+
+<div>
+    <button class="b5" onclick="b5()">Гриффиндор</button>
+</div>
+
+<div>
+    <button class="b6" onclick="b6()">Слизерин</button>
+</div>
+
+<div>
+    <button class="b7" onclick="b7()">Когтевран</button>
+</div>
+
+<div>
+    <button class="b8" onclick="b8()">Пуффендуй</button>
+</div>
+
+
+
+
+<script>
+localStorage.setItem("score", 0);
+let score = Number(localStorage.getItem("score")) || 0;
+
+
+function b5(){
+    alert("верно");
+    score++;
+    localStorage.setItem("score", score);
+
+   setTimeout(function(){
+        window.location.href = "home4.html";
+    },1000);
+}
+
+
+
+function b6(){
+    alert("не верно");
+}
+function b7(){
+    alert("не верно");
+}
+function b8(){
+    alert("не верно");
+}
+</script>
+
+
+
+
+</body>
+</html>

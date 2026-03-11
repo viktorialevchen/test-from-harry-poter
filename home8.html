@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+      .p13{
+        margin-left: 30rem;
+      }
+      .img8{
+        width: 50rem;
+        margin-left: 20rem;
+      }
+      .b24{
+          width: 50rem;
+          margin-left: 20rem;
+          background-color: rgba(0, 0, 255, 0.519);
+      }
+       .b25{
+          width: 50rem;
+          margin-left: 20rem;
+          margin-top: 0.5rem;
+          background-color: rgba(0, 200, 255, 0.519);
+      }
+      .b26{
+          width: 50rem;
+          margin-left: 20rem;
+          margin-top: 0.5rem;
+          background-color: rgba(89, 0, 255, 0.579);
+      }
+         .b27{
+          width: 50rem;
+          margin-left: 20rem;
+          margin-top: 0.5rem;
+          background-color: rgba(119, 99, 204, 0.319);
+      }
+    </style>
+
+
+    <p>Очки: <span class="score">7</span></p>
+<p class="p13">Как успокоить Пушка — трёхголового пса, который охранял философский камень?</p>
+<img class="img8" src="https://www.kino-teatr.ru/blog/879/21543.jpg" alt="">
+
+<div>
+  <button class="b24" onclick="b24()">Дать ему кость</button>
+</div>
+
+<div>
+  <button class="b25" onclick="b25()">Сыграть музыку</button>
+</div>
+
+<div>
+  <button class="b26" onclick="b26()">Дать ему мясо</button>
+</div>
+
+<div>
+  <button class="b27" onclick="b27()">Позвать Хагрида</button>
+</div>
+
+
+
+<script>
+  let score = localStorage.getItem("score") || 0;
+
+  function b24(){
+    alert("не верно");
+  }
+  function b25(){
+    alert("верно");
+     localStorage.setItem("score", score);
+
+      setTimeout(function(){
+        window.location.href = "home9.html";
+    },1000);
+  }
+  function b26(){
+    alert("не верно");
+  }
+  function b27(){
+    alert("не верно");
+  }
+</script>
+</body>
+</html>

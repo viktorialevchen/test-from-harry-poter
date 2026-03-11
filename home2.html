@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+ <style>
+      .p5{
+         margin-left: 30rem;
+      }
+      .img2{
+         width: 45rem;
+         margin-left: 20rem;
+      }
+      .button3{
+         background-color: bisque;
+         margin-left: 20rem;
+         width: 45rem;
+      }
+      .button4{
+         background-color: burlywood;
+          margin-top: 0.5rem;
+          margin-left: 20rem;
+          width: 45rem;
+      }
+      .button5{
+          background-color: coral;
+          margin-top: 0.5rem;
+          margin-left: 20rem;
+          width: 45rem;
+      }
+   </style>
+
+   <p>Очки: <span class="score">1</span></p>
+   <p class="p5">Как называется платформа, с которой отправляется поезд в школу?</p>
+   <img class="img2" src="https://moika78.ru/news2/2021/12/HogwartsExpress-1024x688.png" alt="">
+   <div>
+     <button class="button3" onclick="knop()">платформа 8/9</button>
+   </div>
+   
+   <div>
+      <button class="button4" onclick="uio()">платформа 3/5</button>
+   </div>
+
+   <div>
+   <button class="button5" onclick="ypa()">платформа 9 3/4</button>
+   </div>
+
+   <script>
+
+   localStorage.setItem("score", 0);
+   let score = Number(localStorage.getItem("score")) || 0;
+
+
+
+
+   function ypa(){
+   alert("верно");
+   score++;
+    localStorage.setItem("score", score);
+
+    setTimeout(function(){
+        window.location.href = "home3.html";
+    },1000);
+}
+
+function knop(){
+    alert("не верно");
+}
+function uio(){
+   alert("не верно");
+}
+
+</script>
+</body>
+</html>
+
+
+

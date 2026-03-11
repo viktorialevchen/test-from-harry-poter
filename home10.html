@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+     .p15{
+        margin-left: 35rem;
+     }
+     .img10{
+        margin-left: 25rem;
+     }
+     .b31{
+          margin-left: 25rem;
+          width: 46rem;
+          background-color: rgb(239, 187, 108);
+     }
+     .b32{
+          margin-left: 25rem;
+          width: 46rem;
+          margin-top: 0.5rem;
+          background-color: rgb(239, 170, 121);
+     }
+       .b33{
+          margin-left: 25rem;
+          width: 46rem;
+          margin-top: 0.5rem;
+          background-color: rgba(253, 157, 89, 0.832);
+     }
+      .b34{
+          margin-left: 25rem;
+          width: 46rem;
+          margin-top: 0.5rem;
+          background-color: rgba(252, 79, 79, 0.832);
+     }
+    </style>
+
+  <p>Очки: <span class="score">9</span></p>
+<p class="p15">Как называется карта, показывающая всех людей в Хогвартсе?</p>
+<img class="img10" src="https://i.pinimg.com/736x/14/cf/84/14cf84ed4cb559aa4f460d864fc86533.jpg" alt="">
+
+<div>
+  <button class="b31" onclick="b31()">Карта волшебников</button>
+</div>
+
+<div>
+    <button class="b32" onclick="b32()">Карта Мародёров</button>
+</div>
+
+<div>
+    <button class="b33" onclick="b33()">Карта магии</button>
+</div>
+
+<div>
+    <button class="b34" onclick="b34()">Карта Хогвартса</button>
+</div>
+
+<script>
+   let score = localStorage.getItem("score") || 0;
+
+function b31(){
+    alert("не верно");
+}
+function b32(){
+    alert("верно!");
+     setTimeout(function(){
+        alert("ты выйграл!");
+    },1000);
+     
+}
+function b33(){
+    alert("не верно");
+}
+function b34(){
+    alert("не верно");
+}
+
+
+
+</script>
+</body>
+</html>

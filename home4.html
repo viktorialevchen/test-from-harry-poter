@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<style>
+  .p10{
+   margin-left: 30rem;
+  }
+  .img4{
+    width: 40rem;
+    margin-left: 25rem;
+  }
+  .b9{
+    background-color: rgb(117, 95, 160);
+    margin-left: 25rem;
+    width: 40rem;
+  }
+  .b10{
+       background-color: cadetblue;
+       margin-left: 25rem;
+       width: 40rem;
+       margin-top: 0.5rem;
+  }
+  .b11{
+       background-color: burlywood;
+       margin-left: 25rem;
+       width: 40rem;
+       margin-top: 0.5rem;
+  }
+  .b12{
+       background-color: crimson;
+       margin-left: 25rem;
+       width: 40rem;
+       margin-top: 0.5rem;
+  }
+</style>
+
+
+     <p>Очки: <span class="score">3</span></p>
+    <p class="p10">Как зовут главного злодея, которого боялись называть по имени?</p>
+    <img class="img4" src="https://6b647836-415a-4fe2-889c-3a1d2a145b0b.selcdn.net/wp-content/uploads/2024/04/scale_1200-5-1200x675.jpg" alt="">
+
+    <div>
+        <button class="b9" onclick="b9()">Беллатриса Лестрейндж</button>
+    </div>
+
+    <div>
+        <button class="b10" onclick="b10()"> Лорд Волан-де-Морт</button>
+    </div>
+
+    <div>
+        <button class="b11" onclick="b11()">Люциус Малфой</button>
+    </div>
+
+    <div>
+        <button class="b12" onclick="b12()">Питер Петтигрю</button>
+    </div>
+
+
+<script>
+      
+   localStorage.setItem("score", 0);
+   let score = Number(localStorage.getItem("score")) || 0;
+
+
+    function b9(){
+        alert("не верно");
+    }
+    function b10(){
+        alert("верно");
+
+         score++;
+    localStorage.setItem("score", score);
+
+   setTimeout(function(){
+        window.location.href = "home5.html";
+    },1000);
+    }
+
+    function b11(){
+        alert("не верно");
+    }
+    function b12(){
+        alert("не верно");
+    }
+</script>
+</body>
+</html>

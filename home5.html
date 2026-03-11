@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <style>
+     .p11{
+        margin-left: 35rem;
+     }
+     .img5{
+        width: 30rem;
+        margin-left: 30rem;
+     }
+     .b13{
+          background-color: goldenrod;
+          width: 30rem;
+          margin-left: 30rem;
+     }
+     .b14{
+         background-color: rgba(42, 139, 12, 0.704);
+         width: 30rem;
+         margin-left: 30rem;
+         margin-top: 0.5rem;
+     }
+     .b15{
+          background-color: rgba(206, 105, 11, 0.836);
+          width: 30rem;
+          margin-left: 30rem;
+          margin-top: 0.5rem;
+     }
+  </style>
+
+    <p>Очки: <span class="score">4</span></p>
+    <p class="p11">Как называется тюрьма для волшебников?</p>
+    <img class="img5" src="https://photobooth.cdn.sports.ru/preset/post/1/e2/44ff194ba4acfbe2301698a383241.jpeg" alt="">
+
+    <div>
+        <button class="b13" onclick="b13()">Нурменгард</button>
+    </div>
+
+    <div>
+        <button class="b14" onclick="b14()">Азкабан</button>
+    </div>
+
+    <div>
+     <button class="b15" onclick="b15()">Косой переулок</button>
+    </div>
+
+    
+    <script>
+      let score = localStorage.getItem("score") || 0;
+      
+     function b13(){
+        alert("не верно");
+     }
+     function b14(){
+        alert("верно");
+
+    score++;
+    localStorage.setItem("score", score);
+
+   setTimeout(function(){
+        window.location.href = "home6.html";
+    },1000);
+     }
+     function b15(){
+      alert("не верно");
+     }
+    </script>
+</body>
+</html>

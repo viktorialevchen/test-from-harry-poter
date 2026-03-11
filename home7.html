@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+     .p12{
+        margin-left: 45rem;
+     }
+     .img7{
+        width: 40rem;
+        margin-left: 30rem;
+     }
+     .b20{
+         margin-left: 30rem;
+         width: 40rem;
+         background-color: rgb(213, 206, 108);
+     }
+     .b21{
+         margin-left: 30rem;
+         width: 40rem;
+         background-color: rgb(254, 237, 0);
+         margin-top: 0.5rem;
+     }
+      .b22{
+         margin-left: 30rem;
+         width: 40rem;
+         background-color: rgba(254, 63, 0, 0.541);
+         margin-top: 0.5rem;
+     }
+      .b23{
+         margin-left: 30rem;
+         width: 40rem;
+         background-color: rgba(127, 254, 0, 0.453);
+         margin-top: 0.5rem;
+     }
+    </style>
+
+    <p>Очки: <span class="score">6</span></p>
+<p class="p12">Что такое крестраж?</p>
+<img class="img7" src="https://cs14.pikabu.ru/post_img/big/2021/10/03/10/1633283512159987680.jpg" alt="">
+
+<div>
+    <button class="b20" onclick="b20()">Предмет, в котором спрятана часть души</button>
+</div>
+
+<div>
+    <button class="b21" onclick="b21()">Магический артефакт для путешествий</button>
+</div>
+
+<div>
+    <button class="b22" onclick="b22()">Волшебное животное</button>
+</div>
+
+<div>
+    <button class="b23" onclick="b23()">Заклинание защиты</button>
+</div>
+<script>
+     let score = localStorage.getItem("score") || 0;
+
+    function b20(){
+        alert("верно");
+         localStorage.setItem("score", score);
+
+      setTimeout(function(){
+        window.location.href = "home8.html";
+    },1000);
+    }
+    function b21(){
+        alert("не верно");
+    }
+    function b22(){
+        alert("не верно");
+    }
+    function b23(){
+        alert("не верно");
+    }
+</script>
+</body>
+</html>

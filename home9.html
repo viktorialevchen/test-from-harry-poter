@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+     .p14{
+        margin-left: 35rem;
+     }
+     .img9{
+        margin-left: 30rem;
+     }
+     .b28{
+          margin-left: 30rem;
+          width: 31rem;
+          background-color: rgba(139, 199, 43, 0.745);
+     }
+      .b29{
+          margin-left: 30rem;
+          width: 31rem;
+          margin-top: 0.5rem;
+          background-color: rgba(43, 199, 92, 0.612);
+     }
+     .b30{
+          margin-left: 30rem;
+          width: 31rem;
+          margin-top: 0.5rem;
+          background-color: rgba(7, 160, 7, 0.605);
+     }
+     
+    </style>
+
+
+       <p>Очки: <span class="score">8</span></p>
+   <p class="p14">Как звали домового эльфа семьи Малфоев?</p>
+   <img class="img9" src="https://i.pinimg.com/736x/cb/4a/0c/cb4a0cc49f7f6dde9adfcc97e64d406c.jpg" alt="">
+
+   <div>
+    <button class="b28" onclick="b28()">Кричер</button>
+   </div>
+
+   <div>
+    <button class="b29" onclick="b29()">Винки</button>
+   </div>
+
+   <div>
+    <button class="b30" onclick="b30()">Добби</button>
+   </div>
+
+<script>
+      let score = localStorage.getItem("score") || 0;
+
+    function b28(){
+        alert("не верно");
+    }
+    function b29(){
+        alert("не верно");
+    }
+    function b30(){
+        alert("верно");
+        localStorage.setItem("score", score);
+
+      setTimeout(function(){
+        window.location.href = "home10.html";
+    },1000);
+    }
+</script>
+</body>
+</html>

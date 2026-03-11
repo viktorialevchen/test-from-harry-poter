@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+     .p5{
+        margin-left: 40rem;
+     }
+     .img6{
+        margin-left: 25rem;
+     }
+     .b16{
+        background-color: cornflowerblue;
+        margin-left: 25rem;
+        width: 46rem;
+     }
+     .b17{
+          background-color: aquamarine;
+          margin-left: 25rem;
+          width: 46rem;
+          margin-top: 0.5rem;
+     }
+     .b18{
+        background-color: bisque;
+          margin-left: 25rem;
+          width: 46rem;
+          margin-top: 0.5rem;
+     }
+     .b19{
+          background-color: rgba(111, 0, 255, 0.381);
+          margin-left: 25rem;
+          width: 46rem;
+          margin-top: 0.5rem;
+     }
+    </style>
+
+     <p>Очки: <span class="score">5</span></p>
+     <p class="p5">Как называется газета волшебного мира?</p>
+     <img class="img6" src="https://i.pinimg.com/736x/d1/58/8a/d1588a32a8289b9ffef0e7044745b221.jpg" alt="">
+
+     <div>
+        <button class="b16" onclick="b16()">Магический вестник</button>
+     </div>
+
+     <div>
+        <button class="b17" onclick="b17()">Волшебные новости</button>
+     </div>
+
+     <div>
+        <button class="b18" onclick="b18()">Ежедневный пророк</button>
+     </div>
+
+     <div>
+        <button class="b19" onclick="b19()">Чародей</button>
+     </div>
+
+     <script>
+      let score = localStorage.getItem("score") || 0;
+        function b16(){
+            alert("не верно");
+             score++;
+         localStorage.setItem("score", score);
+
+      setTimeout(function(){
+        window.location.href = "home7.html";
+    },1000);
+        }
+        function b17(){
+            alert("не верно");
+        }
+        function b18(){
+            alert("верно");
+            window.location.href="home7.html"
+        }
+        function b19(){
+            alert("не верно");
+        }
+     </script>
+</body>
+</html>
